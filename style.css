@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(to bottom right,
+            rgb(37, 37, 37),
+            rgb(71, 71, 71));
+    font-size: 13px;
+    margin: 13px;
+    color: white;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 20px;
+    color: rgb(5, 205, 255);
+}
+
+h2 {
+    color: rgb(0, 131, 192);
+    font-size: 18px;
+}
+
+h3 {
+    color: rgb(2, 86, 126);
+    font-size: 16px;
+}
+
+h4 {
+    color: rgb(0, 132, 194);
+    font-size: 14px;
+}
+
+a {
+    color: rgb(5, 205, 255);
+    font-size: 12px;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+a:active {
+    color: rgb(212, 0, 255);
+}
+
+p {
+    font-size: 12px;
+    color: white;
+}
+
+table {
+    width: 25%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+}
+.link1 {    
+    color: rgb(214, 214, 214);
+    font-size: 12px;
+}
+
+.link2 {    
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
