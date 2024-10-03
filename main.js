@@ -20,8 +20,13 @@ function changeColor(num) {
     document.getElementById("navColor2").style.color = "red";
   } else if (num == 3) {
     document.getElementById("navColor3").style.color = "red";
-  } 
-}//onmouseover/onmouseout 
+  } else if (num == 4) {
+    document.getElementById("navColor4").style.color = "red";
+  } else if (num == 5) {
+    document.getElementById("navColor5").style.color = "red";
+  } }
+  
+//onmouseover/onmouseout 
 function revertColor(num) {
   if (num == 1) {
     document.getElementById("navColor1").style.color = "rgb(5, 205, 255)";
@@ -29,7 +34,8 @@ function revertColor(num) {
     document.getElementById("navColor2").style.color = "rgb(5, 205, 255)";
   } else if (num == 3) {
     document.getElementById("navColor3").style.color = "rgb(5, 205, 255)";
-  }
-
-  
-}
+  } else if (num == 4) {
+    document.getElementById("navColor4").style.color = "rgb(5, 205, 255)"; 
+  } else if (num == 5) {
+    document.getElementById("navColor5").style.color = "rgb(5, 205, 255)"; 
+  } }
