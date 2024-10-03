@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="style.css">
-<title>Lab 3 Assignment</title>
+<html lang="en">
+
+<head>
+  <title>Lab 5 Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
   <h1>Niraj Vaya</h1>
-  <ul>
-    <li>High School: Stephen Lewis Secondary School, 2015-2019</li>
-    <li>University: Toronto Metropolitan University, 2020-2025</li>
-    <li>The BTM program teaches business skills with technology management. It prepares students to learn about IT
-      systems, lead technology projects, and analyze business processes to improve organizational performance. The
-      program covers business analysis courses and information technology courses, equipping students for roles like
-      business analysts, project managers, and IT consultants. </li>
-  </ul>
+  <br>
+  <img id="profile-pic" class="small" src="images/image.jpg" alt="Niraj Vaya" onclick="toggleImage()">
 
-  <h2>Favorite Course: ITM795 </h2>
-  <p>I really enjoyed ITM795. It helped me learn statistical analysis, which can be used in the future for analyzing
-    data.</p>
+  <div>
+    <button type="button" id="myButton" onclick="enterName()">Enter Your Name</button>
+    <div id="name"></div>
+  </div>
 
+  <nav >
+    <ul>
+      <li><a href="mailto:nirajvaya17@gmail.com" id = "navColor1"  onmouseover = "changeColor(1)" onmouseout="revertColor(1)" >Contact Me</a></li> 
+      <li><a href="https://www.linkedin.com/in/niraj-vaya/ " id = "navColor2"  onmouseover = "changeColor(2)" onmouseout="revertColor(2)">LinkedIn</a></li>
+      <li><a href="https://drive.google.com/file/d/1TemV8jjPUApr2YowITMuHu6BpIJJ14pi/view?usp=sharing"id = "navColor3"  onmouseover = "changeColor(3)" onmouseout="revertColor(3)">My Resume</a>
+      </li>
+
+
+      <h4>My Previous Education</h4>
+      <ul class="submenu" >
+        <li id = "navColor"><a href="https://stephenlewis.peelschools.org">HighSchool</a></li>
+        <li id = "navColor"><a href="https://www.torontomu.ca">University</a></li>
+
+
+      </ul>
+      </li>
+    </ul>
+  </nav>
   <h2>Awards</h2>
   <ul>
     <li>Honours Student 2018</li>
@@ -26,26 +42,11 @@
   <h3>Activities</h3>
   <ol>
     <li>Student Union</li>
-    <li> Marketing Club</li>
-
+    <li>Marketing Club</li>
   </ol>
-  <table>
-    <tr>
-      <div class="link1">
-        <td><a href="https://www.linkedin.com/in/niraj-vaya/">LinkedIn</a></td>
-      </div>
-      <td>This will take you to my LinkedIn page</td>
-    </tr>
-    <tr>
-      <div class="link2">
-        <td><a href="https://drive.google.com/file/d/1TemV8jjPUApr2YowITMuHu6BpIJJ14pi/view?usp=sharing">Resume</a></td>
-      </div>
-      <td>This will take you to my resume.</td>
-    </tr>
-  </table>
 
 
-  </div>
+  <script src="main.js"></script>
 
 </body>
 
