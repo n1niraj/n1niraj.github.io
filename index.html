@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Lab 6 Assignment</title>
+  <title>Lab 8 Assignment</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,6 +24,14 @@
         <button type="button" id="myButton" onclick="enterName();this.style.display='none'">Enter Your Name</button>
         <div id="name"></div>
       </div>
+
+<!-- Audio -->
+<p id="media-caption">Welcome Audio</p>
+<div id="media-section" style="margin: 15px 0;">
+  <audio id="myAudio" controls>
+    <source src="ITM780 audio.mp3" type="audio/mp3">
+  </audio>
+
 
 
   </nav>
@@ -58,6 +66,55 @@
       <h4>Send me a Messege</h4>
     </button>
     </br>
+<br>
+<!-- Enlarged Text Button -->
+<button onclick="enlargeText()">Enlarge Text Size</button>
+  
+<!-- Background Color Change Button -->
+<button onclick="toggleColorMode()">Toggle Color Mode</button>
+  </br>
+
+
+
+<!-- Images with Alt-Text -->
+<div id="images-section" style="margin: 20px 0;">
+
+  <!-- Image 1 -->
+  <div>
+    <img id="image1" src="thumbnail_image0.jpg" alt="March, 2nd, 2023 in Toronto: Huge Leafs fan">
+    <button onclick="showAltText('image1')">Image Description (View Alt Text)</button>
+  </div>
+
+  <!-- Image 2 -->
+  <div>
+    <img id="image2" src="thumbnail_IMG_3014.jpg" alt="August, 15th, 2024 in Toronto Me and the mayjor of Toronto Olivia Chow">
+    <button onclick="showAltText('image2')">Image Description (View Alt Text)</button>
+  </div>
+
+  <!-- Image 3 -->
+  <div>
+    <video id="video1" controls style="display:block; margin-top:10px;">
+      <source src="jet ski.MOV" type="video/mp4">
+    </video>
+    <button onclick="showAltText('video1')">Image Description (View Alt Text)</button>
+    <p id="alt-video1" style="display:none;">July, 11th, 2022 in Spain: Jetskiing in Spain.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 </body>
 
 </html>

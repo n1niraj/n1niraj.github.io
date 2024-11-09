@@ -96,3 +96,19 @@ form {
     color: rgb(2, 86, 126);
     font-size: 17px
 }
+
+
+#image1 { 
+    width: auto;
+    height: 300px;
+}
+
+#image2 { 
+    width: auto;
+    height: 300px;
+}
+
+#video1 { 
+    width: auto;
+    height: 300px;
+}

@@ -41,34 +41,36 @@ function revertColor(num) {
     document.getElementById("navColor5").style.color = "rgb(5, 205, 255)";
   }
 }
-//reset button 
-function resetContact() {
-  document.getElementById("contactme").reset();
-
+// Function to enlarge text size
+function enlargeText() {
+  document.body.style.fontSize = "20px";
 }
 
-//Store data after clicking submit button
-
-function storeData() {
-  var name = document.getElementById("fullname").value;
-  var email = document.getElementById("email").value;
-  var cell = document.getElementById("cell").value;
-  var morning = document.getElementById("Morning").checked;
-  var afternoon = document.getElementById("Afternoon").checked;
-  var evening = document.getElementById("Evening").checked;
-  var option = document.getElementById("options").value;
-  var message = document.getElementById("Messege").value;
-
-  localStorage.setItem("name", name);
-  localStorage.setItem("email", email);
-  localStorage.setItem("cell", cell);
-  localStorage.setItem("morning", morning);
-  localStorage.setItem("afternoon", afternoon);
-  localStorage.setItem("evening", evening);
-  localStorage.setItem("option", option);
-  localStorage.setItem("message", message);
-
-  alert("Messege Sent!\nThank you for reaching out, I will get back to you as soon as possible.");
-};
+// Toggle text colors for accessibility
+function toggleColorMode() {
+  const body = document.body;
+  if (body.style.backgroundColor === 'black') {
+    body.style.backgroundColor = 'white';
+    body.style.color = 'black';
+  } else {
+    body.style.backgroundColor = 'black';
+    body.style.color = 'white';
+  }
+}
 
 
+// Function to display alt text 
+function showAltText(elementId) {
+  const element = document.getElementById(elementId);
+  let altText;
+
+  // Making the alert 
+  if (element.tagName === 'IMG') {
+    altText = element.alt;
+  } else if (element.tagName === 'VIDEO') {
+    const description = document.getElementById('alt-' + elementId);
+    description.style.display = 'block';
+    return; 
+  }
+  alert(` ${altText}`);
+}
